@@ -11,7 +11,7 @@ const options = {
 
 fetch('https://shazam-core.p.rapidapi.com/v1/charts/world', options)
   .then(response => response.json())
-  .then(response => console.log(response))
+  // .then(response => console.log(response))
   .catch(err => console.error(err));
  
 //boilerplate object to make fetch from store

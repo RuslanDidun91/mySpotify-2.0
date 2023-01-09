@@ -53,3 +53,5 @@ const SongDetails = () => {
     </div>
   );
 };
+
+export default SongDetails;
