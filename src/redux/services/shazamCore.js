@@ -1,13 +1,13 @@
 // utility functions comming from redux toolkit
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': import.meta.env.VITE_SHAZAM_CORE_RAPID_API_KEY,
-    'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
-  }
-};
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': import.meta.env.VITE_SHAZAM_CORE_RAPID_API_KEY,
+//     'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
+//   }
+// };
 
 fetch('https://shazam-core.p.rapidapi.com/v1/charts/world', options)
   .then(response => response.json())
