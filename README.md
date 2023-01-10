@@ -1,136 +1,64 @@
-# Project Lyrics
-
-Develop an elegant React.js Music Application. 
-
-Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
-
-# Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via issue.
-Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
-
-
-## System Requirements
-
-To get started with development, you need to install few tools
-
-1. git 
-   
-   `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
-
-   To check your version of git, run:
-
-   ```shell
-    git --version
-   ```
-
-2. node 
-   
-   `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
-
-   To check your version of node, run:
-
-   ```shell
-    node --version
-   ```
-
-3. npm
+<div align = "center">
+      
+ <a>[<img src="https://i.imgur.com/j8mJauf.png" alt="Logo" width="250" height="170">](https://ruslandidun91.github.io/my-youtube/)
+ </a>
+ 
+</br>
   
-   `npm` version 5.6.1 or higher. You will have it after you install node.
+<div id="description" align="center">
+ Created and designed by Ruslan Didun
 
-   To check your version of npm, run:
+[![LinkedIn Badge](https://img.shields.io/badge/-RuslanDidun-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/ruslan-didun/)
+[![Instagram Badge](https://img.shields.io/badge/-wanderlust_unlimited-skyblue?style=flat&logo=Instagram&logoColor=black)](https://www.instagram.com/wanderlust_unlimited_/)
+[![GitHub Badge](https://img.shields.io/badge/-RuslanDidun-junglegreen?style=flat&logo=GitHub&logoColor=black)](https://github.com/RuslanDidun)
 
-   ```shell
-    npm --version
-   ```
+<p align="center">
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#upcoming-features">Upcoming Features</a> •
+  <a href="#technologies">Technologies</a> 
+</p>
 
-## Setup
+## About
 
-To set up a development environment, please follow these steps:
+#### mySpotify 2.0 is a web application, where users can search, listen and share music. Also app allows you to check the most popular songs according to your geo location, lirycs and artist details available as well. This small web app was written to gain more experience in building front end web applications and consuming 3rd party api, fetching and displaying data. 
 
-1. Clone the repo
+#### mySpotify 2.0 is a music application, based on the best Shazam songs. I am using RapidAPI and Geo.Ipify as a 3rd party API, TailWind CSS for biuldong responsive UI, React for front end and Redux as a state manegement library.
 
-   ```shell
-    git clone https://github.com/JavaScript-Mastery-PRO/project1_team4_repository.git
-   ```
+<img src="https://i.imgur.com/r153XjC.png" alt="Logo" width="650" height="500">
+</br>
+</br>
+<img src="https://i.imgur.com/RrAJ9lq.png" alt="Logo" width="500" height="650">
 
-2. Change directory to the project directory
+## Getting Started
+Follow this [link 👈](https://ruslandidun91.github.io/my-youtube/) today to dive into music world 
+and discover the most popular tracks worldwide. 
 
-    ```shell
-    cd project1_team4_repository
-    ```
+<img src="https://i.imgur.com/kSwEXUg.png" alt="Logo" width="650" height="500">
 
-3. Install the dependencies
-   
-    ```shell
-     npm install
-    ```
+## Upcoming Features
 
-    If you get an error, please check the console for more information.
+- [x] Created and set up project, installed all packages and libraries.
+- [x] Fetched music consumed Shazam API through RapidAPI and axios.
+- [x] Added components, pages, search bar, routes, categories and feed. 
+- [x] Implemented Artist detail page, ability to search random tracks.
+- [x] Created fully responsive, mobile, user-friendly UI ussing React_JS. 
+- [x] Consumed Geo.Ipify.org, used TailWind CSS, spinners, react-palayer.
+- [ ] implement "Add song to my favourite" and "My account" functionality. 
 
-    If you don't get an error, you are ready to start development.
+## Technologies  
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=React)
+![Redux](https://img.shields.io/badge/-Redux-05122A?style=flat&logo=Redux)
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
+![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
+![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
+![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
+![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-05122A?style=flat&logo=TailwindCSS)
 
-4. Run the app
-   
-    ```shell
-    npm run dev
-    ```
-
-    Project will be running in the browser.
-
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-## Issues
-
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/orgs/JavaScript-Mastery-PRO/projects/8). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
-
-Please try to create bug reports that are:
-
-- _Reproducible._ Include steps to reproduce the problem.
-- _Specific._ Include as much detail as possible: which version, what environment, etc.
-- _Unique._ Do not duplicate existing opened issues.
-- _Scoped to a Single Bug._ One bug per report.
-
-
-## Pull Request
-
-There are 2 main work flows when dealing with pull requests:
-
-* Pull Request from a [forked repository](https://help.github.com/articles/fork-a-repo)
-* Pull Request from a branch within a repository
-
-Here we are going to focus on 2. Creating a Topical Branch:
-
-
-1. First, we will need to create a branch from the latest commit on master. Make sure your repository is up to date first using
-
-   ```bash
-    git pull origin main
-   ```
-
-   *Note:* `git pull` does a `git fetch` followed by a `git merge` to update the local repo with the remote repo. For a more detailed explanation, see [this stackoverflow post](http://stackoverflow.com/questions/292357/whats-the-difference-between-git-pull-and-git-fetch).
-
-2. To create a branch, use `git checkout -b <new-branch-name> [<base-branch-name>]`, where `base-branch-name` is optional and defaults to `main`. 
-   
-   Use a standard convention for branch names. For example, `<your-name>-dev`. It will be easier to track your pull requests if you use this convention.
-   
-   I'm going to create a new branch called `jsm-dev` from the `main` branch and push it to github.
-
-   ```bash
-    git checkout -b jsm-dev main
-    git push origin jsm-dev
-   ```
-
-3. To create a pull request, you must have changes committed to your new branch.
-
-4. Go to [Pull Requests](https://github.com/JavaScript-Mastery-PRO/project1_team4_repository/pulls) and click on the `New Pull Request` button.
-
-5. Select the `main` branch as the `base` branch and the `jsm-dev` branch as the `compare` branch.
-
-6. Follow the template and fill in the proper information for the pull request.
-
-7. Click on the `Submit` button.
-
-8. You have successfully created a pull request. Now wait for mentor approval. Once approved, you can merge the pull request.
-
-#
+![Vite](https://img.shields.io/badge/-Vite-05122A?style=flat&logo=Vite)
+![figma](https://img.shields.io/badge/-Figma-05122A?style=flat&logo=Figma)
+![Google](https://img.shields.io/badge/-Google-05122A?style=flat&logo=Google)
+![StackOverflow](https://img.shields.io/badge/-StackOverflow-05122A?style=flat&logo=StackOverflow)
+![RapidAPI](https://img.shields.io/badge/-RapidAPI-05122A?style=flat&logo=RapidAPI)
+![Shazam](https://img.shields.io/badge/-Shazam-05122A?style=flat&logo=Shazam)
+![CrossedFingers](https://img.shields.io/badge/-CrossedFingers-05122A?style=flat&logo=CrossedFingers)
