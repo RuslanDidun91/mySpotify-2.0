@@ -1,5 +1,4 @@
 import React from 'react';
-
 import SongBar from './SongBar';
 
 const RelatedSongs = ({ data, artistId, isPlaying, activeSong, handlePauseClick, handlePlayClick }) => (
@@ -15,7 +14,7 @@ const RelatedSongs = ({ data, artistId, isPlaying, activeSong, handlePauseClick,
           isPlaying={isPlaying}
           activeSong={activeSong}
           handlePauseClick={handlePauseClick}
-          handlePlayClick={handlePlayClick}/>
+          handlePlayClick={handlePlayClick} />
       ))}
     </div>
   </div>

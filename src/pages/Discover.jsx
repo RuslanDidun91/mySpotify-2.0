@@ -7,7 +7,6 @@ import { useGetSongsByGenreQuery } from '../redux/services/shazamCore';
 
 
 const Discover = () => {
-
   //redux
   const dispatch = useDispatch();
   const { activeSong, isPlaying, genreListId } = useSelector((state) => state.player);
@@ -20,7 +19,7 @@ const Discover = () => {
   // console.log(data)
 
   //dynamic genre title
-  const genreTitle = genres.find(({value}) => value ===genreListId)?.title;
+  const genreTitle = genres.find(({ value }) => value === genreListId)?.title;
 
   return (
     <div className='flex flex-col'>
@@ -47,7 +46,7 @@ const Discover = () => {
         ))}
       </div>
     </div>
-  )
+  );
 };
 
 export default Discover;

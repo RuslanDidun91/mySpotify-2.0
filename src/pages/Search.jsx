@@ -16,8 +16,8 @@ const Search = () => {
 
   return (
     <div className="flex flex-col">
-      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Showing results for 
-      <span className="font-black">{searchTerm}</span></h2>
+      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">
+        Showing results for <span className="font-black">{searchTerm}</span></h2>
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
         {songs.map((song, i) => (
           <SongCard
@@ -26,7 +26,7 @@ const Search = () => {
             isPlaying={isPlaying}
             activeSong={activeSong}
             data={data}
-            i={i}/>
+            i={i} />
         ))}
       </div>
     </div>

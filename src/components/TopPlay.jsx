@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper';
-
 import PlayPause from './PlayPause';
 import { playPause, setActiveSong } from '../redux/features/playerSlice';
 import { useGetTopChartsQuery } from '../redux/services/shazamCore';
-
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
@@ -18,14 +16,10 @@ const TopChartCard = ({ song, i, isPlaying, activeSong, handlePauseClick, handle
       <img className="w-20 h-20 rounded-lg" src={song?.images?.coverart} alt={song?.title} />
       <div className="flex-1 flex flex-col justify-center mx-3">
         <Link to={`/songs/${song.key}`}>
-          <p className="text-xl font-bold text-white">
-            {song?.title}
-          </p>
+          <p className="text-xl font-bold text-white">{song?.title}</p>
         </Link>
         <Link to={`/artists/${song?.artists[0].adamid}`}>
-          <p className="text-base text-gray-300 mt-1">
-            {song?.subtitle}
-          </p>
+          <p className="text-base text-gray-300 mt-1">{song?.subtitle} </p>
         </Link>
       </div>
     </div>
@@ -34,8 +28,7 @@ const TopChartCard = ({ song, i, isPlaying, activeSong, handlePauseClick, handle
       activeSong={activeSong}
       song={song}
       handlePause={handlePauseClick}
-      handlePlay={handlePlayClick}
-    />
+      handlePlay={handlePlayClick} />
   </div>
 );
 
@@ -69,7 +62,6 @@ const TopPlay = () => {
             <p className="text-gray-300 text-base cursor-pointer">See more</p>
           </Link>
         </div>
-
         <div className="mt-4 flex flex-col gap-1">
           {topPlays?.map((song, i) => (
             <TopChartCard
@@ -79,12 +71,10 @@ const TopPlay = () => {
               isPlaying={isPlaying}
               activeSong={activeSong}
               handlePauseClick={handlePauseClick}
-              handlePlayClick={() => handlePlayClick(song, i)}
-            />
-          ))}
+              handlePlayClick={() => handlePlayClick(song, i)} />
+          ))};
         </div>
       </div>
-
       <div className="w-full flex flex-col mt-8">
         <div className="flex flex-row justify-between items-center">
           <h2 className="text-white font-bold text-2xl">Top Artists</h2>
@@ -92,7 +82,6 @@ const TopPlay = () => {
             <p className="text-gray-300 text-base cursor-pointer">See more</p>
           </Link>
         </div>
-
         <Swiper
           slidesPerView="auto"
           spaceBetween={15}
@@ -100,19 +89,17 @@ const TopPlay = () => {
           centeredSlides
           centeredSlidesBounds
           modules={[FreeMode]}
-          className="mt-4"
-        >
+          className="mt-4" >
           {topPlays?.slice(0, 5).map((artist) => (
             <SwiperSlide
               key={artist?.key}
               style={{ width: '25%', height: 'auto' }}
-              className="shadow-lg rounded-full animate-slideright"
-            >
+              className="shadow-lg rounded-full animate-slideright">
               <Link to={`/artists/${artist?.artists[0].adamid}`}>
                 <img src={artist?.images?.background} alt="Name" className="rounded-full w-full object-cover" />
               </Link>
             </SwiperSlide>
-          ))}
+          ))};
         </Swiper>
       </div>
     </div>

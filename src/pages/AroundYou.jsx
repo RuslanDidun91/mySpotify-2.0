@@ -41,7 +41,7 @@ const AroundYou = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default AroundYou;
