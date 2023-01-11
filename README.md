@@ -1,6 +1,6 @@
 <div align = "center">
       
- <a>[<img src="https://i.imgur.com/j8mJauf.png" alt="Logo" width="250" height="170">](https://ruslandidun91.github.io/my-youtube/)
+ <a>[<img src="https://i.imgur.com/j8mJauf.png" alt="Logo" width="250" height="170">](https://ruslan-didun-myspotify-2.netlify.app)
  </a>
  
 </br>
@@ -30,7 +30,7 @@
 <img src="https://i.imgur.com/RrAJ9lq.png" alt="Logo" width="500" height="650">
 
 ## Getting Started
-Follow this [link 👈](https://ruslandidun91.github.io/my-youtube/) today to dive into music world 
+Follow this [link 👈](https://ruslan-didun-myspotify-2.netlify.app) today to dive into music world 
 and discover the most popular tracks worldwide. 
 
 <img src="https://i.imgur.com/kSwEXUg.png" alt="Logo" width="650" height="500">

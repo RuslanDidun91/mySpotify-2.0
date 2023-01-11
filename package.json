@@ -1,7 +1,7 @@
 {
   "name": "myspotify",
   "homepage": "https://ruslandidun91.github.io/mySpotify-2.0/",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
